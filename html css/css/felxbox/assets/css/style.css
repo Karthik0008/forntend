@@ -1,0 +1,18 @@
+{box-sizing: border-box;margin: 0px;}
+body{padding: 0px;}
+.red-box{background-color: red;}
+.blue-box{background-color: blue;}
+.green-box{background-color: green;}
+.w-200{width: 200px;}
+.w-300{width: 300px;}
+.w-400{width: 400px}
+.h-200{height: 200px;}
+.h-300{height: 300px;}
+.h-400{height: 400px;}
+
+
+.p-20{padding: 20px;}
+.m-5{margin: 5px;}
+.d-flex{display: flex;}
+.d-justify-center{justify-content: center;}
+.d-justify-evenly{justify-content: space-evenly;}

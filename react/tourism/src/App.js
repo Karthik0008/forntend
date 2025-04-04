@@ -1,0 +1,44 @@
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Tourist Places</title>
+    <style>
+    body{
+        text-align: center;
+        background-color: rgb(201, 195, 236);
+    }
+    #tour{
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    button{
+        background-color: rgb(61, 172, 61);
+        border: 2px solid rgb(59, 26, 26);
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 20px;
+    }
+</style>
+</head>
+<body id="chBg">
+<img id="tour" src="" width="800px" height="500"></img><<br>
+<button onclick="document.getElementById('tour') .src='assets/img/kodaikanal.jpg',document.getElementById('chBg').style.backgroundColor='Red'; ">Kodaikanal</button>
+<button onclick="document.getElementById('tour') .src='assets/img/darjeeling.jpg',document.getElementById('chBg').style.backgroundColor='green'; ">Darjeeling</button>
+<button onclick="document.getElementById('tour') .src='assets/img/himalaya.jpg',document.getElementById('chBg').style.backgroundColor='blue'; ">Himalaya</button>
+<button onclick="document.getElementById('tour') .src='assets/img/ladakh.jpg',document.getElementById('chBg').style.backgroundColor='yellow'; ">ladakh</button>
+<button onclick="document.getElementById('tour') .src='assets/img/manali.jpg',document.getElementById('chBg').style.backgroundColor='pink';  ">Manali</button>
+<button onclick="document.getElementById('tour') .src='assets/img/ooty.png' ,document.getElementById('chBg').style.backgroundColor='black'; ">Ooty</button>
+
+</body>
+</html> 
+</>
+}
+
+export default App;

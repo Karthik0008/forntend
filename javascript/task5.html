@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+</head>
+<body>
+    <div id="studentList"></div>
+
+    <script>
+        // Array of student objects
+        const students = [
+            { id: 1, name: "Alice", age: 20 },
+            { id: 2, name: "Bob", age: 21 },
+            { id: 3, name: "Charlie", age: 22 },
+            { id: 4, name: "David", age: 23 },
+            { id: 5, name: "Emma", age: 24 },
+            { id: 6, name: "Frank", age: 25 }
+        ];
+
+        // Get the div element by ID
+        const studentListDiv = document.getElementById("studentList");
+
+        // Create a list of students using a for loop
+        let html = "<h2>Student List</h2><ul>";
+        for (let i = 0; i < students.length; i++) {
+            html += `<li>${students[i].id}. ${students[i].name} - Age: ${students[i].age}</li>`;
+        }
+        html += "</ul>";
+        studentListDiv.innerHTML = 
+        "<table border=1><tr><th>id</th><th>name</th><th>age</th></tr><tr><td> " + students[0].id +"</td><td> "+ students[0].name +"</td><td> "+ students[0].age+"</td></tr><tr><td> " + students[1].id +"</td><td> "+ students[1].name +"</td><td> "+ students[1].age+"</td></tr><tr><td> " + students[2].id +"</td><td> "+ students[2].name +"</td><td> "+ students[2].age+"</td></tr><tr><td> " + students[3].id +"</td><td> "+ students[3].name +"</td><td> "+ students[3].age+"</td></tr><tr><td> " + students[4].id +"</td><td> "+ students[4].name +"</td><td> "+ students[4].age+"</td></tr><tr><td> " + students[5].id +"</td><td> "+ students[5].name +"</td><td> "+ students[5].age+"</td></tr>"+"</table>";
+    </script>
+
+</body>
+</html>

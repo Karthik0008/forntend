@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blub img on and off task</title>
+    <style>
+        .container{
+            width: 60%;
+            margin:auto;
+            text-align: center;
+        }
+       
+    </style>
+</head>
+<body>
+   <div class="container">
+    <h1> Greetings </h1>
+    <h2 id="chGreet">&nbsp;</h2>
+    <button onclick="eng();">English</button> <button onclick="tam()">Tamil</button> <button onclick="hin();">Hindi</button> <button onclick="fre();">French</button>
+</div>
+
+<script>
+ function eng(){
+    document.getElementById('chGreet').innerHTML="Good Morning";
+   
+ }
+
+ function tam(){
+    document.getElementById('chGreet').innerHTML="Vannakam";
+ }
+ function hin(){
+    document.getElementById('chGreet').innerHTML="namaste";
+
+ }
+ function fre(){
+    document.getElementById('chGreet').innerHTML="Banjour";
+
+ }
+
+</script>
+</body>
+</html>
